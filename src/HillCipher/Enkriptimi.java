@@ -11,6 +11,8 @@ public class Enkriptimi {
         if(text.length() % 2 != 0){
             text+='X';
         }
+        
+
 
         int [][] keyMatrix = new int[2][2];
         System.out.println("Enter 4 numbers for the 2y2 key matrix:");
