@@ -1,4 +1,6 @@
 # Hill-Cipher
+
+
 Ky program në Java implementon algoritmin Hill Cipher – një teknikë klasike e kriptimit që përdor algjebrën lineare dhe matricat për të enkriptuar tekstin.
 ### Përshkrimi i algoritmit
 Hill Cipher është një formë e kriptimit bllok që përdor një matricë çelës (key matrix) për të enkriptuar një tekst të zakonshëm në bazë të veprimeve matematikore mbi grupe të karaktereve.
