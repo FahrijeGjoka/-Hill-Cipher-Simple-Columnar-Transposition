@@ -2,7 +2,8 @@ package SimpleColumnarTransposition;
 
 import java.util.Scanner;
 
-public class Dekriptimi {
+public class
+Dekriptimi {
 
     public static String decrypt(String encryptedText, int key) {
         int length = encryptedText.length();
