@@ -1,6 +1,4 @@
 # Hill-Cipher
-
-
 Ky program në Java implementon algoritmin Hill Cipher – një teknikë klasike e kriptimit që përdor algjebrën lineare dhe matricat për të enkriptuar tekstin.
 ### Përshkrimi i algoritmit
 Hill Cipher është një formë e kriptimit bllok që përdor një matricë çelës (key matrix) për të enkriptuar një tekst të zakonshëm në bazë të veprimeve matematikore mbi grupe të karaktereve.
@@ -10,13 +8,11 @@ Karakteristikat:
 -E kundërta (dekriptimi) kërkon inversin e matricës çelës
 
 ### Kërkesat
-
 -Java Development Kit (JDK 8 ose më i ri)
 -IntelliJ IDEA, Eclipse, ose një IDE tjetër për Java
 -Alternativisht, përdorimi i javac dhe java në terminal/command prompt
 
 ## Si funksionon
-
 1.Teksti i zakonshëm konvertohet në shkronja të mëdha dhe hiqen hapësirat
 2.Zgjidhet një çelës matricë katrore (p.sh. 2x2 ose 3x3) me determinant të invertueshëm në mod 26
 3.Teksti ndahet në blloqe me madhësi të barabartë me dimensionin e matricës
@@ -30,7 +26,6 @@ Ekzekutoni metodën main
 Jepni:
 Tekstin për enkriptim (vetëm shkronja)
 Madhësinë dhe përmbajtjen e matricës çelës (vlerat numerike)
-
 Programi do të shfaqë tekstin e enkriptuar
 
 #### Shembull ekzekutimi për Enkriptim 
@@ -59,23 +54,35 @@ caktuar. Ai nuk ndryshon shkronjat, por vetëm i rindërton ato në bazë të ko
 - IntellJ IDEA ose çdo IDE tjetër për JAVA.
 - Ose, alternativisht, terminal/command prompt për përpilim dhe ekzekutim
 
-## Si funksionon 
+## Si funksionon ( a)Enkriptimi dhe b)Dekriptimi)
+a)Enkriptimi
 1.Teksti i dhënë konvertohet në shkronja të mëdha dhe hiqen hapësirat.
 2. Teksti vendoset në një matricë me 'key' kolona dhe numër të caktuar rreshtash.
 3. Nëse nuk plotësohet krejtësisht matrica, vendosen karaktere 'X' në fund.
 4. Teksti enkriptohet duke lexuar matricën kolonë pas kolone. 
 
+b)Dekriptimi
+1.Teksti i enkriptuar vendoset në një matricë me key kolona dhe numër të caktuar rreshtash
+2. Matrica mbushet kolonë pas kolone, ndryshe nga enkriptimi që lexohet kështu.
+3. Teksti origjinal ndertohet duke lexuar matricën rresht pas rreshti.
+4. Karakteret 'X' në fund hiqen nëse nuk janë pjesë e mesazhit origjinal.
+
 ## Si ta ekzekutoni
 -Hapni projektin ne IntellJ;
-- Drejtohuni te `src/SimpleColumnarTransposition/Enkriptimi.java`.
+- Drejtohuni te `src/SimpleColumnarTransposition/Enkriptimi.java`ose `src/SimpleColumnarTransposition/Dekriptimi.java`
 - Ekzekutoni metodën `main`.
-- Shkruani tekstin që dëshironi të enkriptoni dhe çelësin numerik. 
+- Shkruani tekstin që dëshironi të enkriptoni dhe çelësin numerik (e kunderta për dekriptim)
 
 
 #### Shembull ekzekutimi për Enkriptim (Columnar Transposition)
 Shkruaj tekstin për enkriptim: Siguria e te dhenave
 Shkruaj çelësin numerik: 4
 Teksti i enkriptuar: SRTEEIIENXGADAXUEHVX
+
+#### Shembull ekzekutimi për Dekriptim (Columnar Transposition)
+Shkruaj tekstin e enkriptuar: SRTEEIIENXGADAXUEHVX
+Shkruaj çelësin numerik (key): 4
+Teksti i dekriptuar: SIGURIAETEDHENAVE
 
 
 
