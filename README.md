@@ -28,9 +28,7 @@ Hapni projektin në IDE ose direkt në terminal
 Navigoni te src/HillCipher/Main.java
 Ekzekutoni metodën main
 Jepni:
-
 Tekstin për enkriptim (vetëm shkronja)
-
 Madhësinë dhe përmbajtjen e matricës çelës (vlerat numerike)
 
 Programi do të shfaqë tekstin e enkriptuar
@@ -40,6 +38,12 @@ Shkruaj tekstin për enkriptim: KRIPTIM
 Shkruaj dimensionin e matrices çelës (2 për 2x2, 3 për 3x3): 2
 Jep vlerat e matrices çelës (8 numra për 2x2): 3 3 2 5
 Teksti i enkriptuar: TTXVRPES
+
+#### Shembull ekzekutimi për Dekriptim
+Shkruaj tekstin për dekriptim: TTXVRPES
+Shkruaj dimensionin e matrices çelës (2 për 2x2, 3 për 3x3): 2
+Jep vlerat e matrices çelës (8 numra për 2x2): 3 3 2 5
+Teksti i dekriptuar: KRIPTIMX
 
 
 ### Simple-Columnar-Transposition
