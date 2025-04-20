@@ -12,13 +12,21 @@ Karakteristikat:
 -IntelliJ IDEA, Eclipse, ose një IDE tjetër për Java
 -Alternativisht, përdorimi i javac dhe java në terminal/command prompt
 
-## Si funksionon
-1.Teksti i zakonshëm konvertohet në shkronja të mëdha dhe hiqen hapësirat
-2.Zgjidhet një çelës matricë katrore (p.sh. 2x2 ose 3x3) me determinant të invertueshëm në mod 26
-3.Teksti ndahet në blloqe me madhësi të barabartë me dimensionin e matricës
-4.Çdo bllok shndërrohet në vektor numerik dhe shumëzohet me matricën çelës
-5.Rezultati modulo 26 konvertohet në shkronja dhe formon tekstin e enkriptuar
+## Si funksionon ( a)Enkriptimi dhe (b)Dekriptimi
+a)Enkriptimi
+1.Teksti i dhënë konvertohet në shkronja të mëdha dhe hiqen hapësirat.
+2.Teksti i pastër ndahet në grupe të karaktereve sipas dimensionit të matricës çelës (p.sh. nga 2 nëse kemi matricë 2x2).
+3.Çdo grup konvertohet në vlera numerike (A=0, B=1, ..., Z=25).
+4.Çdo grup shumëzohet me matricën çelës përmes shumëzimit matricor modulo 26.
+5.Rezultati i shumëzimit konvertohet prapë në shkronja (0=A, 1=B, ..., 25=Z).
+6.Nëse teksti nuk ndahet saktë në grupe të plota, në fund shtohen karaktere si 'X' për mbushje.
 
+b)Dekriptimi
+1.Teksti i enkriptuar ndahet në grupe sipas madhësisë së matricës çelës.
+2.Krijohet matrica inverze e çelësit, modulo 26.
+3.Çdo grup konvertohet në numra dhe shumëzohet me matricën inverze, gjithashtu modulo 26.
+4.Rezultati konvertohet në shkronja për të rikthyer tekstin origjinal.
+5.Nëse janë shtuar karaktere 'X' për mbushje gjatë enkriptimit, ato hiqen në fund për të marrë tekstin e saktë.
 ## Si ta ekzekutoni
 Hapni projektin në IDE ose direkt në terminal
 Navigoni te src/HillCipher/Main.java
